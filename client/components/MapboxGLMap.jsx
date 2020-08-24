@@ -6,15 +6,13 @@ const styles = {
   width: "100vw",
   height: "100vh",
   position: "absolute",
-  zIndex: -10,
 };
 
-const MapboxGLMap = () => {
+const MapboxGLMap = ({ zoom }) => {
   const MELBOURNE = {lat: -37.840935, lng: 144.946457};
   const [map, setMap] = useState(null);
   const [ lat, setLat ] = useState(MELBOURNE.lat);
   const [ lng, setLng ] = useState(MELBOURNE.lng);
-  const [ zoom, setZoom ] = useState(2);
   const mapContainer = useRef(null);
 
   useEffect(() => {

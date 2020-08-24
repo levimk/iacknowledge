@@ -8,10 +8,10 @@ export default function Home() {
     <div className={styles.container}>
       <main className={styles.main}>
         <h1 className={styles.title}>
-          I acknowledge the Traditional Owners of Australia
+          <section className={styles.subtitle}>I acknowledge Australia's</section><section>Traditional Owners</section>
         </h1>
 
-        <MapboxGLMap/>
+        <MapboxGLMap zoom={3}/>
       </main>
       <footer className={styles.footer}>
         <a
